@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       'use strict'
+        let result1 = 10 + 10 + "10";
+        console.log(result1);
+        // получаем 2010 первые десятки суммиркются, из-за аослейдей превращаются в строку.
+        let result2 = 10 + "10" + 10;
+        console.log(result2);
+        // получаем 101010 первое число и строка образуют строку, и так же с последни числом.
+        let result3 = 10 + 10 + +"10";
+        console.log(result3);
+        //получаем 30, т.к. унарный плюс превращает строку в число.
+        let result4 = 10 / -"";
+        console.log(result4);
+        //получаем -Infinity т.к. пустота в кавычках превращается в 0.
+        let result5 = 10 / +"2,5";
+        console.log(result5);
+        // получаем NaN т.к. вместо точки стоит запятая и не получается превратить строку в число.
+    </script>
+</body>
+</html>
