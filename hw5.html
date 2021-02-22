@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            function ex1(a,b) {
+            return a + b;
+        }
+        console.log(ex1(2,9));
+        
+        function ex2(a,b) {
+            return a - b;
+        }
+        console.log(ex2(2,9));
+        
+        function ex3(a,b) {
+            return a * b;
+        }
+        console.log(ex3(2,9));
+        
+        function ex4(a,b) {
+            return a / b;
+        }
+        console.log(ex4(2,9));
+        
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return ex1(arg1, arg2);
+                case "-":
+                    return ex2(arg1, arg2);
+                case "*":
+                    return ex3(arg1, arg2);
+                case "/":
+                    return ex4(arg1, arg2);
+                default:
+                    console.log("Операция " + operation + " не поддерживается")
+            }
+        }
+        console.log(mathOperation(11, 13, "+"));
+        console.log(mathOperation(11, 13, "-"));
+        console.log(mathOperation(11, 13, "*"));
+        console.log(mathOperation(11, 13, "/"));
+        console.log(mathOperation(11, 13, "NaN"));
+    </script>
+</body>
+</html>
